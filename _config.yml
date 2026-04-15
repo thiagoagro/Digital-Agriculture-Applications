@@ -1,5 +1,5 @@
 title: Digital Agriculture Application
-logo: assets/logo.png
+logo: config/img/logo_DAP.png
 description: text below image
 show_downloads: True
 theme: jekyll-theme-minimal
