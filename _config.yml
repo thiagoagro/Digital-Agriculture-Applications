@@ -20,7 +20,7 @@ url: "https://thiagoagro.github.io"
 baseurl: "/Digital-Agriculture-Applications"
 
 # Sidebar / identity
-avatar:
+avatar: 
 
 # Keep the site always in dark mode
 theme_mode: dark
