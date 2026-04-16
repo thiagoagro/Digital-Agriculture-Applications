@@ -1,3 +1,6 @@
+<img width="240" height="240" alt="DAP_240" src="https://github.com/user-attachments/assets/16df4cf1-533c-4c51-8544-0030ae86614e" />
+
+
 # Digital Agriculture Applications
 
 > Bridging agronomy, data science, and remote sensing to build practical solutions for precision agriculture.
@@ -77,9 +80,9 @@ In 2024, I spent 12 months as a **Visiting Researcher** at the [University of Ge
 ## Contact
 
 - **Email:** thiagocostaagro@gmail.com
-- **LinkedIn:** [linkedin.com/in/YOUR-LINKEDIN](https://www.linkedin.com/in/YOUR-LINKEDIN/)
-- **ORCiD:** [orcid.org/YOUR-ORCID](https://orcid.org/YOUR-ORCID)
-- **Google Scholar:** [scholar.google.com](https://scholar.google.com/citations?user=YOUR-ID)
+- **LinkedIn:** www.linkedin.com/in/thiago-orlando-costa-barboza-5ba88213b
+- **ORCiD:** https://orcid.org/0000-0001-5156-2474
+- **Google Scholar:** https://scholar.google.com.br/citations?user=Wxg0WyMAAAAJ&hl=pt-BR
 
 ---
 
