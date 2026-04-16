@@ -1,0 +1,251 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ==========================================================
+   Digital Agriculture Applications — Tech Dark Skin for Chirpy
+   Append-only customization for a more futuristic agritech look.
+   ========================================================== */
+
+html[data-mode='dark'] body {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(0, 255, 170, 0.08), transparent 24%),
+    radial-gradient(circle at 88% 12%, rgba(0, 163, 255, 0.08), transparent 26%),
+    linear-gradient(180deg, #04070a 0%, #071018 100%);
+  color: #eef4f7;
+}
+
+html[data-mode='dark'] #sidebar {
+  background: linear-gradient(180deg, #04070a 0%, #0a1118 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 36px rgba(0, 0, 0, 0.35);
+}
+
+html[data-mode='dark'] #topbar-wrapper {
+  background: rgba(4, 7, 10, 0.72);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+html[data-mode='dark'] h1,
+html[data-mode='dark'] h2,
+html[data-mode='dark'] h3,
+html[data-mode='dark'] h4,
+html[data-mode='dark'] .site-title,
+html[data-mode='dark'] .card-title {
+  color: #f8fbff;
+  letter-spacing: -0.02em;
+}
+
+html[data-mode='dark'] p,
+html[data-mode='dark'] li,
+html[data-mode='dark'] .content,
+html[data-mode='dark'] .post-content,
+html[data-mode='dark'] .site-subtitle,
+html[data-mode='dark'] .card-text {
+  color: #acb8c4;
+}
+
+html[data-mode='dark'] a {
+  color: #7dffb3;
+}
+
+html[data-mode='dark'] a:hover {
+  color: #c8ffda;
+  text-shadow: 0 0 14px rgba(125, 255, 179, 0.22);
+}
+
+html[data-mode='dark'] .nav-link,
+html[data-mode='dark'] .sidebar-bottom a {
+  color: #dbe6ee;
+}
+
+html[data-mode='dark'] .nav-link:hover,
+html[data-mode='dark'] .sidebar-bottom a:hover,
+html[data-mode='dark'] .nav-link.active {
+  color: #7dffb3;
+}
+
+html[data-mode='dark'] .card,
+html[data-mode='dark'] .card-wrapper.card,
+html[data-mode='dark'] .preview,
+html[data-mode='dark'] .post-preview {
+  background: linear-gradient(180deg, #0a1016 0%, #0e151d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+}
+
+html[data-mode='dark'] .post-preview:hover,
+html[data-mode='dark'] .card:hover {
+  transform: translateY(-2px);
+  transition: 0.25s ease;
+}
+
+html[data-mode='dark'] code,
+html[data-mode='dark'] pre {
+  border-radius: 12px;
+  border: 1px solid rgba(125, 255, 179, 0.10);
+}
+
+html[data-mode='dark'] hr {
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+/* ---------- Homepage hero ---------- */
+
+.hero-shell {
+  position: relative;
+  overflow: hidden;
+  padding: 2.25rem;
+  margin-bottom: 2rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(135deg, rgba(125, 255, 179, 0.06), rgba(0, 163, 255, 0.05)),
+    linear-gradient(180deg, #091018 0%, #0b1118 100%);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.22);
+}
+
+.hero-shell::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -35% auto;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(125, 255, 179, 0.12), transparent 65%);
+  pointer-events: none;
+}
+
+.hero-kicker {
+  margin: 0 0 0.8rem;
+  color: #7dffb3 !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin-bottom: 0.9rem;
+  font-size: clamp(2.1rem, 4vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.hero-lead {
+  max-width: 820px;
+  font-size: 1.08rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #eef4f7 !important;
+  background: rgba(255, 255, 255, 0.02);
+  text-decoration: none !important;
+  transition: 0.25s ease;
+}
+
+.hero-btn:hover {
+  border-color: rgba(125, 255, 179, 0.5);
+  transform: translateY(-1px);
+}
+
+.hero-btn-primary {
+  background: linear-gradient(90deg, rgba(125, 255, 179, 0.18), rgba(0, 163, 255, 0.10));
+}
+
+/* ---------- Cards and sections ---------- */
+
+.agri-grid,
+.feature-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1.25rem 0 2rem;
+}
+
+.agri-card,
+.feature-box {
+  display: block;
+  padding: 1.25rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(180deg, rgba(11, 17, 24, 0.92), rgba(8, 13, 18, 0.95));
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+  text-decoration: none !important;
+}
+
+.agri-card h3,
+.feature-box h3 {
+  margin-top: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.agri-label {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  color: #7dffb3;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tag-band {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+
+.tag-band span {
+  padding: 0.7rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.025);
+  color: #d7e2eb;
+  font-size: 0.92rem;
+}
+
+.callout-panel {
+  padding: 1.25rem 1.35rem;
+  border-left: 3px solid #7dffb3;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(125, 255, 179, 0.05), rgba(255, 255, 255, 0.02));
+}
+
+.callout-panel p {
+  margin-bottom: 0;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 991px) {
+  .agri-grid,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-shell {
+    padding: 1.5rem;
+  }
+}
