@@ -9,10 +9,10 @@ lang: en
 timezone: America/Sao_Paulo
 
 title: Digital Agriculture Applications
-tagline: Remote Sensing • AI • Precision Agriculture
+tagline: Remote Sensing • AI • Precision Agriculture • Machine & Deep Learning
 description: >-
   Research portfolio focused on digital agriculture, computer vision,
-  geospatial analytics, and practical AI solutions for precision farming.
+  geospatial analytics and practical AI solutions for precision farming.
 
 # IMPORTANT:
 # If you later rename the repository, update `baseurl`.
@@ -20,7 +20,7 @@ url: "https://thiagoagro.github.io"
 baseurl: "/Digital-Agriculture-Applications"
 
 # Sidebar / identity
-avatar: 
+avatar: assets/DAP.png
 
 # Keep the site always in dark mode
 theme_mode: dark
